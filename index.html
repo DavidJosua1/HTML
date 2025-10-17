@@ -1,127 +1,197 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #071026;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Josue Mamani Parillo</title>
 
-        .calculadora {
-            width: 280px;
-            background-color: #1f2937;
-            padding: 20px;
-            border-radius: 15px;
-        }
-        #salida {
-            background-color: #0f172a;
-            color:aquamarine;
-            padding: 10px;
-            border-radius: 15px;
-            font-size: 28px;
-            text-align: right;
-            margin-bottom: 15px;
-        }
-        .botones {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
-        .botones button:nth-child(17) {
-        grid-column: span 2;
-        }
- 
-        button {
-            padding: 15px;
-            background-color: #374151;
-            border: none;
-            font-size: 18px;
-            border-radius: 10px;
-            cursor: pointer;
-            color: white;
-        }
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-        button:hover {
-        background-color: #4b5563;
-        }
+    #titulo {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: 30px;
+      color: #222;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
 
-    </style>
+    .portada {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      background: white;
+      padding: 30px;
+      margin: 40px auto;
+      width: 80%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
+    .portada img {
+      border-radius: 10px;
+      border: 3px solid #555;
+      transition: transform 0.3s;
+    }
+
+    .portada img:hover {
+      transform: scale(1.05);
+    }
+
+    .portada p {
+      max-width: 600px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    h2 {
+      text-align: center;
+      color: #222;
+      margin-top: 40px;
+      margin-left: 50px;
+      border-bottom: 2px solid #aaa;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #005999;
+    }
+
+    .Ejercicios {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      margin: 40px;
+    }
+
+    .temas {
+      text-align: center;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .temas:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .temas h3 {
+      color: #111;
+    }
+
+    .foto {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover .foto {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
-    <div class ="calculadora">
-        
-        <div id="salida"> 0 </div>
 
-        <div class = "botones">
-            <button>C</button>
-            <button>⌫</button>
-            <button>%</button>
-            <button>÷</button>
+  <div id="titulo">
+    David Josue Mamani Parillo
+  </div>
 
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>×</button>
+  <div class="portada">
+    <img src="fotopersonal.png" alt="foto" height="150">
+    <p>
+      Soy estudiante de Ingeniería de Sistemas, apasionado por la tecnología, la programación y la innovación. Me interesa el desarrollo de software, la inteligencia artificial y la ciberseguridad. Busco fortalecer mis conocimientos para crear soluciones que optimicen procesos y contribuyan al avance tecnológico.
+    </p>
+  </div>
 
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>−</button>
+  <h2>Trabajos</h2>
+  <ul>
+    <li><a href="trabajo_HTML/documento.html">Trabajo HTML</a></li>
+    <li><a href="calculadora.html">Calculadora</a></li>
+    <li><a href="computadora.html">Trabajo CSS</a></li>
+  </ul>
 
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-            
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
-        </div>
+  <h2>Ejercicios</h2>
+  <div class="Ejercicios">
+    <div class="temas">
+      <div>
+        <h3>HTML</h3>
+        <ul>
+          <li><a href="html/web1.html">Web 1</a></li>
+          <li><a href="html/web2.html">Web 2</a></li>
+          <li><a href="html/prac01.html">Práctica 1</a></li>
+          <li><a href="html/prac02.html">Práctica 2</a></li>
+        </ul>
+      </div>
+      <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
+        <button><img src="html.png" class="foto"></button>
+      </a>
     </div>
 
-    <script>
-        const display = document.getElementById('salida');
-        const botones = document.querySelectorAll('button');
+    <div class="temas">
+      <div>
+        <h3>CSS</h3>
+        <ul>
+          <li><a href="css/prac03.html">Práctica 1</a></li>
+        </ul>
+      </div>
+      <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">
+        <button><img src="css.png" class="foto"></button>
+      </a>
+    </div>
 
-        let expresion = '';
+    <div class="temas">
+      <div>
+        <h3>JavaScript</h3>
+        <ul>
+          <li><a href="javaScript/prac01.html">Práctica 1</a></li>
+          <li><a href="javaScript/prac02.html">Práctica 2</a></li>
+          <li><a href="javaScript/prac03.html">Práctica 3</a></li>
+          <li><a href="javaScript/prac04.html">Práctica 4</a></li>
+          <li><a href="javaScript/prac05.html">Práctica 5</a></li>
+        </ul>
+      </div>
+      <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">
+        <button><img src="javaScript.png" class="foto"></button>
+      </a>
+    </div>
+  </div>
 
-        botones.forEach(boton => {
-        boton.addEventListener('click', () => {
-            const valor = boton.textContent;
-
-            if (valor === 'C') {
-            expresion = '';
-            display.textContent = '0';
-            } else if (valor === '⌫') {
-            expresion = expresion.slice(0, -1);
-            display.textContent = expresion || '0';
-            } else if (valor === '=') {
-
-            expresion = expresion.replace(/÷/g, '/').replace(/×/g, '*').replace(/−/g, '-');
-
-            try {
-                display.textContent = eval(expresion);
-                expresion = display.textContent;
-            } catch {
-                display.textContent = 'Error';
-                expresion = '';
-            }
-            } else {
-            expresion += valor;
-            display.textContent = expresion;
-            }
-        });
-        });
-
-    </script>
 </body>
 </html>

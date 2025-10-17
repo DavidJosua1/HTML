@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computadora</title>
+<style>
+    body {
+        background-color: #f2f2f2;
+        color: #222;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+    .computadora {
+        position: relative;
+        width: 700px;
+        height: 480px;
+        margin: 40px auto;
+    }
+
+    /* MONITOR IZQUIERDO */
+    .monitor {
+        width: 360px;
+        height: 210px;
+        background-color: #cce0ff;
+        border: 8px solid #333;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        border-radius: 8px;
+    }
+
+    .soporte {
+        width: 60px;
+        height: 40px;
+        background-color: #333;
+        position: absolute;
+        top: 250px;
+        left: 190px;
+    }
+
+    .base {
+        width: 180px;
+        height: 25px;
+        background-color: #555;
+        position: absolute;
+        top: 290px;
+        left: 130px;
+        border-radius: 10px;
+    }
+
+    /* CPU DERECHA */
+    .cpu {
+        width: 150px;
+        height: 280px;
+        background-color: #e6e6e6;
+        border: 8px solid #333;
+        position: absolute;
+        top: 40px;
+        left: 520px;
+        border-radius: 6px;
+    }
+
+    .boton {
+        width: 20px;
+        height: 20px;
+        background-color: #007acc;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 80px;
+        box-shadow: 0 0 8px #007acc;
+    }
+
+    .adorno {
+        width: 90px;
+        height: 70px;
+        background-color: #999;
+        position: absolute;
+        top: 180px;
+        left: 45px;
+        border-radius: 4px;
+    }
+
+    /* TECLADO */
+    .teclado {
+        width: 360px;
+        height: 70px;
+        background-color: #444;
+        position: absolute;
+        top: 380px;
+        left: 170px;
+        border-radius: 5px;
+    }
+
+    /* MOUSE */
+    .mouse {
+        width: 65px;
+        height: 90px;
+        background-color: #ddd;
+        border: 3px solid #333;
+        border-radius: 40px;
+        position: absolute;
+        top: 390px;
+        left: 560px;
+    }
+
+    .ruedita {
+        width: 10px;
+        height: 25px;
+        background-color: #333;
+        border-radius: 5px;
+        position: absolute;
+        top: 30px;
+        left: 27px;
+    }
+</style>
+</head>
+<body>
+    <h1>La computadora</h1>
+
+    <div class="computadora">
+        <div class="monitor"></div>
+        <div class="soporte"></div>
+        <div class="base"></div>
+
+        <div class="cpu">
+            <div class="boton"></div>
+            <div class="adorno"></div>
+        </div>
+
+        <div class="teclado"></div>
+
+        <div class="mouse">
+            <div class="ruedita"></div>
+        </div>
+    </div>
+</body>
+</html>
